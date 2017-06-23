@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.aluna.sensores.MainActivity">
+    <Button android:id="@+id/vibrador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vibrador"/>
+    <Button
+        android:id="@+id/acelerometro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Acelerometro"/>
+    <Button
+        android:id="@+id/giroscopio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Giroscopio"/>
+    <Button
+        android:id="@+id/proximidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Proximidad"/>
+    <TextView
+        android:id="@+id/salida"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Sensores: \n"
+        android:background="@color/colorPrimary"/>
+</LinearLayout>

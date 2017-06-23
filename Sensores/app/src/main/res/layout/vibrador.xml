@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:onClick="vibrarUnaVez"
+        android:text="Vibrar una vez"
+        android:id="@+id/vibrarUna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="vibrarRespetidas"
+        android:text="Vibrar repetidas veces"
+        android:id="@+id/vibrarRepetidas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="detener"
+        android:text="Detener"
+        android:id="@+id/stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
