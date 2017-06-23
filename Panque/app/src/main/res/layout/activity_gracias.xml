@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_height="match_parent"
+    android:layout_margin="20sp">
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gracias!"
+        android:textSize="60sp"
+        android:id="@+id/textView4" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Su producto llegara en minutos"
+        android:textSize="30sp"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="260sp"
+        android:layout_height="260sp"
+        android:layout_marginTop="21dp"
+        app:srcCompat="@drawable/emoticon"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

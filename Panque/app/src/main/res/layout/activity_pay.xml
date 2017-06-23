@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/naranjo"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:text="¿COMO PAGAR?"
+        android:id="@+id/textView2"/>
+
+    <CheckBox
+        android:textSize="20sp"
+        android:layout_marginTop="100sp"
+        android:layout_marginLeft="50sp"
+        android:onClick="onCheckboxClicked"
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_gravity="center"
+        android:text="Tarjeta de Credito" />
+
+
+    <CheckBox
+        android:onClick="onCheckboxClicked"
+        android:layout_marginLeft="50sp"
+        android:id="@+id/checkBox2"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:text="Pago contra entrega" />
+
+
+    <CheckBox
+        android:textSize="20sp"
+        android:onClick="onCheckboxClicked"
+        android:id="@+id/checkBox3"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="50sp"
+        android:text="PayPal" />
+    <TableLayout
+        android:layout_marginTop="70sp"
+        android:background="@color/naranjo"
+        android:stretchColumns="*"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/button"
+                android:background="@android:color/transparent"
+                android:onClick="atras"
+                android:text="ATRÁS"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:background="@android:color/transparent"
+                android:text="SIGUIENTE"
+                android:onClick="sigue" />
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>

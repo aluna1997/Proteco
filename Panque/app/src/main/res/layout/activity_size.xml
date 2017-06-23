@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/naranjo"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:text="¿QUÉ TAMAÑO?"
+        android:id="@+id/textView2"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100sp"
+        android:id="@+id/linearLayout"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:onClick="onCheckboxClicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="CHICO"/>
+        <CheckBox
+            android:id="@id/checkBox2"
+            android:onClick="onCheckboxClicked"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="MEDIANO"/>
+        <CheckBox
+            android:id="@id/checkBox3"
+            android:onClick="onCheckboxClicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="GRANDE"/>
+
+
+    </LinearLayout>
+
+    <TableLayout
+        android:background="@color/naranjo"
+        android:stretchColumns="*"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true">
+        <TableRow>
+
+            <Button
+                android:id="@+id/button"
+                android:background="@android:color/transparent"
+                android:onClick="atras"
+                android:text="ATRÁS"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:background="@android:color/transparent"
+                android:text="SIGUIENTE"
+                android:onClick="sigue" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

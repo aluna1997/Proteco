@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:inputType="number"
+        android:maxLength="16"
+        android:layout_marginTop="150dp"
+        android:layout_gravity="center"
+        android:hint="Ingrese el numero de tarjeta a 16 digitos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numTarjeta"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:inputType="number"
+        android:maxLength="3"
+        android:layout_marginTop="250dp"
+        android:layout_gravity="center"
+        android:hint="Ingrese el codigo de seguridad a 3 digitos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/codSeguridad"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/naranjo"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <Button
+                android:background="@android:color/transparent"
+                android:onClick="atras"
+                android:text="ATRÁS"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+            <Button
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:background="@android:color/transparent"
+                android:text="SIGUIENTE"
+                android:onClick="sigue" />
+
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

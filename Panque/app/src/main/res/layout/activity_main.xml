@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dfdfdf">
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/naranjo"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:text="SELECCIONA UNA CATEGORÍA"/>
+
+        <LinearLayout
+            android:layout_margin="16dp"
+            android:background="@android:color/white"
+            android:padding="8dp"
+            android:orientation="vertical"
+            android:scrollbars="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="-38dp"
+                android:src="@drawable/frutal"/>
+            <TextView
+                android:layout_gravity="start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Postres frutales"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:shadowDx="2"
+                android:shadowDy="3"
+                android:shadowRadius="2"
+                android:shadowColor="@android:color/black"
+                android:textColor="@android:color/white"/>
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Más de 120 recetas"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:textStyle="italic"
+                    android:layout_margin="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prueba las deliciosas recetas que tenemos para ti"/>
+            </LinearLayout>
+            <Button
+                android:layout_gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SELECCIONAR"
+                android:onClick="postre"
+                android:id="@+id/btn_sigue"
+                android:background="@android:color/transparent"
+                android:textColor="#00b0ff"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_margin="16dp"
+            android:background="@android:color/white"
+            android:padding="8dp"
+            android:orientation="vertical"
+            android:scrollbars="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="-38dp"
+                android:src="@drawable/desayuno"/>
+            <TextView
+                android:layout_gravity="start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desayunos mexicanos"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:shadowDx="2"
+                android:shadowDy="3"
+                android:shadowRadius="2"
+                android:shadowColor="@android:color/black"
+                android:textColor="@android:color/white"/>
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Más de 40 recetas"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:textStyle="italic"
+                    android:layout_margin="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Increíbles platillos para comenzar el día"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@android:color/transparent"
+                android:onClick="mexicano"
+                android:text="SELECCIONAR"
+                android:textColor="#00b0ff" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_margin="16dp"
+            android:background="@android:color/white"
+            android:padding="8dp"
+            android:orientation="vertical"
+            android:scrollbars="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="-38dp"
+                android:src="@drawable/conservas"/>
+            <TextView
+                android:layout_gravity="start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conservas"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:shadowDx="2"
+                android:shadowDy="3"
+                android:shadowRadius="2"
+                android:shadowColor="@android:color/black"
+                android:textColor="@android:color/white"/>
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Con especias de Francia"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:textStyle="italic"
+                    android:layout_margin="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lo que le hace falta a tu platillo, lo tenemos nosotros con nuestras increíbles conservas"/>
+            </LinearLayout>
+            <Button
+                android:layout_gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SELECCIONAR"
+                android:background="@android:color/transparent"
+                android:textColor="#00b0ff"
+                android:onClick="conserva" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
