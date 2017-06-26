@@ -20,6 +20,8 @@
 
     <string name="pregunta_3">Hecho es mejor que perfecto</string>
 
+    <string name="pregunta_4">Pregunta 4</string>
+
 
     <!--Respuestas-->
     <string name="respuesta_1_a">Pablo Picasso</string>
@@ -30,6 +32,18 @@
     <string name="respuesta_2_a">Huevo y agua</string>
     <string name="respuesta_2_b">Colorantes y aceite</string>
     <string name="respuesta_2_c">Colorantes y agua</string>
+
+    <!--Respuestas-->
+    <string name="respuesta_3_a">3A</string>
+    <string name="respuesta_3_b">3b</string>
+    <string name="respuesta_3_c">3c</string>
+
+    <!--Respuestas-->
+    <string name="respuesta_4_a">4A</string>
+    <string name="respuesta_4_b">4b</string>
+    <string name="respuesta_4_c">4c</string>
+
+
 
 
 

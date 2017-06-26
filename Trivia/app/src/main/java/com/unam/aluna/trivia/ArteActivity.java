@@ -1,6 +1,7 @@
 package com.unam.aluna.trivia;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -15,10 +16,10 @@ import android.widget.Toast;
  * Created by aluna on 25/06/17.
  */
 
-public class ArteActivity extends AppCompatActivity {
+public class ArteActivity extends AppCompatActivity implements View.OnClickListener{
 
     Integer puntos = 0;
-    Integer numPregunta = 0;
+    Integer numPregunta = 1;
     TextView enunciado;
     CheckBox a;
     CheckBox b;
@@ -36,52 +37,53 @@ public class ArteActivity extends AppCompatActivity {
         b = (CheckBox) findViewById(R.id.checkBoxB);
         c = (CheckBox) findViewById(R.id.checkBoxC);
         siguiente = (Button) findViewById(R.id.siguiente);
+        asignaPregunta(R.string.pregunta_1,R.string.respuesta_1_a,R.string.respuesta_1_b,R.string.respuesta_1_c);
+        numPregunta++;
+        siguiente.setOnClickListener(this);
 
 
-        enunciado.setText(R.string.pregunta_1);
-        a.setText(R.string.respuesta_1_a);
-        b.setText(R.string.respuesta_1_b);
-        c.setText(R.string.respuesta_1_c);
 
-        siguiente.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                if (a.isChecked()) {
-                    Toast.makeText(ArteActivity.this, "Correcto :)", Toast.LENGTH_SHORT).show();
-                }
-
-                numPregunta +=1;
-
-                if (numPregunta == 1) {
-                    calfRespuesta(a, R.string.pregunta_2);
-                    numPregunta +=1;
-                }
-
-                if (numPregunta == 3) {
-                    calfRespuesta(a, R.string.pregunta_3);
-                }
-
-                deseleccionarTodos();
-
-            }
-
-
-        });
 
 
     }
 
+    public void asignaPregunta(Integer numPregunta, Integer Res_a, Integer Res_b, Integer Res_c){
+
+        enunciado.setText(numPregunta);
+        a.setText(Res_a);
+        b.setText(Res_b);
+        c.setText(Res_c);
+
+    }
 
     public void calfRespuesta(CheckBox checkbox, int sigPreg) {
 
         if (checkbox.isChecked()) {
             Toast.makeText(ArteActivity.this, "Correcto :)", Toast.LENGTH_SHORT).show();
             puntos += 1;
-            enunciado.setText(sigPreg);
         } else {
             Toast.makeText(ArteActivity.this, "Incorrecto :(", Toast.LENGTH_SHORT).show();
-            enunciado.setText(sigPreg);
+        }
+        deseleccionarTodos();
+        switch (sigPreg){
+            case 2:
+                asignaPregunta(R.string.pregunta_2,R.string.respuesta_2_a,R.string.respuesta_2_b,R.string.respuesta_2_c);
+                numPregunta++;
+                break;
+            case 3:
+                asignaPregunta(R.string.pregunta_3,R.string.respuesta_3_a,R.string.respuesta_3_b,R.string.respuesta_3_c);
+                numPregunta++;
+                break;
+            case 4:
+                asignaPregunta(R.string.pregunta_4,R.string.respuesta_4_a,R.string.respuesta_4_b,R.string.respuesta_4_c);
+                numPregunta++;
+                break;
+            default:
+                Intent i = new Intent(ArteActivity.this,ResultActivity.class);
+                i.putExtra("Puntos",puntos);
+                startActivity(i);
+
+
         }
 
 
@@ -122,4 +124,10 @@ public class ArteActivity extends AppCompatActivity {
         c.setChecked(false);
     }
 
+    @Override
+    public void onClick(View view) {
+
+        calfRespuesta(a,numPregunta);
+
+    }
 }
