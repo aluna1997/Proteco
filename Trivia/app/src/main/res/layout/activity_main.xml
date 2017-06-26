@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="35sp"
+    tools:context="com.unam.aluna.trivia.MainActivity">
+
+    <TextView
+        android:id="@+id/categoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/categoria"
+        android:textSize="23sp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/arte"
+        android:layout_marginTop="100sp"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:text="@string/arte"
+        android:textSize="22sp"
+        android:textColor="@color/icons"
+        android:background="@color/primary_light" />
+
+    <Button
+        android:id="@+id/cine"
+        android:layout_marginTop="180sp"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:text="@string/cine"
+        android:textSize="22sp"
+        android:textColor="@color/icons"
+        android:background="@color/primary_light" />
+
+    <Button
+        android:id="@+id/ciencia"
+        android:layout_marginTop="260sp"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:text="@string/ciencia"
+        android:textSize="22sp"
+        android:textColor="@color/icons"
+        android:background="@color/primary_light" />
+
+    <Button
+        android:id="@+id/deportes"
+        android:layout_marginTop="340sp"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:text="@string/deportes"
+        android:textSize="22sp"
+        android:textColor="@color/icons"
+        android:background="@color/primary_light" />
+
+
+
+
+
+</RelativeLayout>

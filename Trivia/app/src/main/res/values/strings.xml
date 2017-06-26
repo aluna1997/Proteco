@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Trivia</string>
+    <string name="categoria">Selecciona una categoria</string>
+    <string name="arte">Arte</string>
+    <string name="cine">Cine</string>
+    <string name="mates">Matematicas</string>
+    <string name="ciencia">Ciencia</string>
+    <string name="deportes">Deportes</string>
+    <string name="siguiente">SIGUIENTE</string>
+
+
+
+
+    <!--ARTE -->
+
+    <!--Preguntas-->
+    <string name="pregunta_1">¿Quien es el autor de la pintura de la Gioconda?</string>
+
+    <string name="pregunta_2">¿Con que se fabrica el oleo?</string>
+
+    <string name="pregunta_3">Hecho es mejor que perfecto</string>
+
+
+    <!--Respuestas-->
+    <string name="respuesta_1_a">Pablo Picasso</string>
+    <string name="respuesta_1_b">Remedios Varo</string>
+    <string name="respuesta_1_c">Leonardo Da Vinci</string>
+
+
+    <string name="respuesta_2_a">Huevo y agua</string>
+    <string name="respuesta_2_b">Colorantes y aceite</string>
+    <string name="respuesta_2_c">Colorantes y agua</string>
+
+
+
+
+
+
+
+
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center_vertical">
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/brain"
+    android:layout_marginBottom="124dp"
+    android:layout_alignBottom="@+id/textView"
+    android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:layout_marginLeft="140sp"
+        android:layout_marginTop="380sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Trivia"
+        android:elegantTextHeight="true"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        android:textColor="#fffaf5"
+        tools:targetApi="lollipop"
+        android:id="@+id/textView" />
+
+
+</RelativeLayout>
