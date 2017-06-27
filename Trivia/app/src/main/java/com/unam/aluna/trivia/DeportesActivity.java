@@ -1,6 +1,5 @@
 package com.unam.aluna.trivia;
 
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -10,13 +9,11 @@ import android.widget.CheckBox;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
-
 /**
- * Created by aluna on 25/06/17.
+ * Created by aluna on 27/06/17.
  */
 
-public class ArteActivity extends AppCompatActivity implements View.OnClickListener{
+public class DeportesActivity extends AppCompatActivity implements View.OnClickListener {
 
     Integer puntos = 0;
     Integer numPregunta = 1;
@@ -30,14 +27,14 @@ public class ArteActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_arte);
+        setContentView(R.layout.activity_deportes);
 
         enunciado = (TextView) findViewById(R.id.pregunta);
         a = (CheckBox) findViewById(R.id.checkBoxA);
         b = (CheckBox) findViewById(R.id.checkBoxB);
         c = (CheckBox) findViewById(R.id.checkBoxC);
         siguiente = (Button) findViewById(R.id.siguiente);
-        asignaPregunta(R.string.pregunta_1_1, R.string.respuesta_1_1_a, R.string.respuesta_1_1_b, R.string.respuesta_1_1_c);
+        asignaPregunta(R.string.pregunta_1_3, R.string.respuesta_1_3_a, R.string.respuesta_1_3_b, R.string.respuesta_1_3_c);
         numPregunta++;
         siguiente.setOnClickListener(this);
 
@@ -66,7 +63,7 @@ public class ArteActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    public void asignaPregunta(Integer numPregunta, Integer Res_a, Integer Res_b, Integer Res_c){
+    public void asignaPregunta(Integer numPregunta, Integer Res_a, Integer Res_b, Integer Res_c) {
 
         enunciado.setText(numPregunta);
         a.setText(Res_a);
@@ -78,28 +75,28 @@ public class ArteActivity extends AppCompatActivity implements View.OnClickListe
     public void calfRespuesta(CheckBox checkbox, int sigPreg) {
 
         if (checkbox.isChecked()) {
-            Toast.makeText(ArteActivity.this, "Correcto :)", Toast.LENGTH_SHORT).show();
+            Toast.makeText(DeportesActivity.this, "Correcto :)", Toast.LENGTH_SHORT).show();
             puntos += 1;
         } else {
-            Toast.makeText(ArteActivity.this, "Incorrecto :(", Toast.LENGTH_SHORT).show();
+            Toast.makeText(DeportesActivity.this, "Incorrecto :(", Toast.LENGTH_SHORT).show();
         }
         deseleccionarTodos();
-        switch (sigPreg){
+        switch (sigPreg) {
             case 2:
-                asignaPregunta(R.string.pregunta_2_1, R.string.respuesta_2_1_a, R.string.respuesta_2_1_b, R.string.respuesta_2_1_c);
+                asignaPregunta(R.string.pregunta_2_3, R.string.respuesta_2_3_a, R.string.respuesta_2_3_b, R.string.respuesta_2_3_c);
                 numPregunta++;
                 break;
             case 3:
-                asignaPregunta(R.string.pregunta_3_1, R.string.respuesta_3_1_a, R.string.respuesta_3_1_b, R.string.respuesta_3_1_c);
+                asignaPregunta(R.string.pregunta_3_3, R.string.respuesta_3_3_a, R.string.respuesta_3_3_b, R.string.respuesta_3_3_c);
                 numPregunta++;
                 break;
             case 4:
-                asignaPregunta(R.string.pregunta_4_1, R.string.respuesta_4_1_a, R.string.respuesta_4_1_b, R.string.respuesta_4_1_c);
+                asignaPregunta(R.string.pregunta_4_3, R.string.respuesta_4_3_a, R.string.respuesta_4_3_b, R.string.respuesta_4_3_c);
                 numPregunta++;
                 break;
             default:
-                Intent i = new Intent(ArteActivity.this,ResultActivity.class);
-                i.putExtra("Puntos",puntos);
+                Intent i = new Intent(DeportesActivity.this, ResultActivity.class);
+                i.putExtra("Puntos", puntos);
                 startActivity(i);
         }
 
@@ -109,7 +106,7 @@ public class ArteActivity extends AppCompatActivity implements View.OnClickListe
 
     public void soloUnaRespuesta(View view) {
 
-        switch(view.getId()) {
+        switch (view.getId()) {
 
             case R.id.checkBoxA:
 
@@ -135,12 +132,10 @@ public class ArteActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    public void deseleccionarTodos (){
+    public void deseleccionarTodos() {
         a.setChecked(false);
         b.setChecked(false);
         c.setChecked(false);
     }
 
-
-
-    }
+}
