@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/correct">
+
+
+    <TextView
+        android:layout_marginTop="100dp"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tu resultado fue:"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/puntaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="80sp"
+        android:layout_marginTop="40dp" />
+
+
+    <TableLayout
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*">
+
+
+        <TableRow
+            android:gravity="bottom"
+            android:id="@+id/tableRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true">
+
+            <Button
+                android:id="@+id/salir"
+                android:background="@color/colorPrimary"
+                android:text="Salir"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:textSize="20sp" />
+
+
+            <Button
+                android:id="@+id/continuar"
+                android:background="@color/colorPrimary"
+                android:text="Continuar"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:textSize="20sp" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
