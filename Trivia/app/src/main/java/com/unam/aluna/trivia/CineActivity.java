@@ -1,8 +1,8 @@
 package com.unam.aluna.trivia;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -13,7 +13,7 @@ import android.widget.Toast;
  * Created by aluna on 27/06/17.
  */
 
-public class CineActivity extends Activity implements View.OnClickListener {
+public class CineActivity extends AppCompatActivity implements View.OnClickListener {
 
     Integer puntos = 0;
     Integer numPregunta = 1;
@@ -26,14 +26,14 @@ public class CineActivity extends Activity implements View.OnClickListener {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cine);
+        setContentView(R.layout.activity_preguntaeincisos);
 
         enunciado = (TextView) findViewById(R.id.pregunta);
         a = (CheckBox) findViewById(R.id.checkBoxA);
         b = (CheckBox) findViewById(R.id.checkBoxB);
         c = (CheckBox) findViewById(R.id.checkBoxC);
         siguiente = (Button) findViewById(R.id.siguiente);
-        asignaPregunta(R.string.pregunta_1_2, R.string.respuesta_1_2_a, R.string.respuesta_1_2_a, R.string.respuesta_1_2_c);
+        asignaPregunta(R.string.pregunta_1_2, R.string.respuesta_1_2_a, R.string.respuesta_1_2_b, R.string.respuesta_1_2_c);
         numPregunta++;
         siguiente.setOnClickListener(this);
 
@@ -44,19 +44,18 @@ public class CineActivity extends Activity implements View.OnClickListener {
 
         switch (numPregunta) {
             case 2:
-                calfRespuesta(a, numPregunta);
+                calfRespuesta(b, numPregunta);
                 break;
             case 3:
                 calfRespuesta(b, numPregunta);
                 break;
             case 4:
-                calfRespuesta(a, numPregunta);
+                calfRespuesta(c, numPregunta);
                 break;
             case 5:
-                calfRespuesta(c, numPregunta);
+                calfRespuesta(b, numPregunta);
                 break;
             default:
-                calfRespuesta(c, numPregunta);
                 break;
         }
     }

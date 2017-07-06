@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 /**
@@ -15,7 +16,7 @@ public class ResultActivity extends AppCompatActivity implements View.OnClickLis
 
     TextView puntaje;
     Button continuar,salir;
-
+    LinearLayout linearLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,8 +24,11 @@ public class ResultActivity extends AppCompatActivity implements View.OnClickLis
         puntaje = (TextView) findViewById(R.id.puntaje);
         continuar = (Button) findViewById(R.id.continuar);
         salir = (Button) findViewById(R.id.salir);
+
         Bundle datos = getIntent().getExtras();
+
         Integer puntos = datos.getInt("Puntos");
+        linearLayout = (LinearLayout)findViewById(R.id.linear);
         puntaje.setText(puntos.toString());
         continuar.setOnClickListener(this);
         salir.setOnClickListener(this);
@@ -36,7 +40,7 @@ public class ResultActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onClick(View view) {
 
-        if (view.getId()==R.id.salir){
+        if (view.getId() == R.id.salir){
             finish();
             Intent intent = new Intent(Intent.ACTION_MAIN);
             intent.addCategory(Intent.CATEGORY_HOME);

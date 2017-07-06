@@ -25,7 +25,7 @@
         android:text="@string/arte"
         android:textSize="22sp"
         android:textColor="@color/icons"
-        android:background="@color/primary_light" />
+        android:background="@color/colorPrimary" />
 
     <Button
         android:id="@+id/cine"
@@ -35,7 +35,7 @@
         android:text="@string/cine"
         android:textSize="22sp"
         android:textColor="@color/icons"
-        android:background="@color/primary_light" />
+        android:background="@color/colorPrimary" />
 
     <Button
         android:id="@+id/ciencia"
@@ -45,7 +45,7 @@
         android:text="@string/ciencia"
         android:textSize="22sp"
         android:textColor="@color/icons"
-        android:background="@color/primary_light" />
+        android:background="@color/colorPrimary" />
 
     <Button
         android:id="@+id/deportes"
@@ -55,7 +55,7 @@
         android:text="@string/deportes"
         android:textSize="22sp"
         android:textColor="@color/icons"
-        android:background="@color/primary_light"
+        android:background="@color/colorPrimary"
         android:layout_below="@+id/ciencia"
         android:layout_alignParentStart="true" />
 

@@ -30,7 +30,7 @@ public class ArteActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_arte);
+        setContentView(R.layout.activity_preguntaeincisos);
 
         enunciado = (TextView) findViewById(R.id.pregunta);
         a = (CheckBox) findViewById(R.id.checkBoxA);
@@ -49,19 +49,18 @@ public class ArteActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (numPregunta) {
             case 2:
-                calfRespuesta(a, numPregunta);
+                calfRespuesta(c, numPregunta);
                 break;
             case 3:
                 calfRespuesta(b, numPregunta);
                 break;
             case 4:
-                calfRespuesta(a, numPregunta);
+                calfRespuesta(c, numPregunta);
                 break;
             case 5:
-                calfRespuesta(c, numPregunta);
+                calfRespuesta(a, numPregunta);
                 break;
             default:
-                calfRespuesta(c, numPregunta);
                 break;
         }
     }

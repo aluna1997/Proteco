@@ -27,7 +27,7 @@ public class DeportesActivity extends AppCompatActivity implements View.OnClickL
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_deportes);
+        setContentView(R.layout.activity_preguntaeincisos);
 
         enunciado = (TextView) findViewById(R.id.pregunta);
         a = (CheckBox) findViewById(R.id.checkBoxA);
@@ -46,19 +46,18 @@ public class DeportesActivity extends AppCompatActivity implements View.OnClickL
 
         switch (numPregunta) {
             case 2:
-                calfRespuesta(a, numPregunta);
+                calfRespuesta(b,numPregunta);
                 break;
             case 3:
-                calfRespuesta(b, numPregunta);
+                calfRespuesta(a,numPregunta);
                 break;
             case 4:
-                calfRespuesta(a, numPregunta);
+                calfRespuesta(b,numPregunta);
                 break;
             case 5:
-                calfRespuesta(c, numPregunta);
+                calfRespuesta(c,numPregunta);
                 break;
             default:
-                calfRespuesta(c, numPregunta);
                 break;
         }
     }

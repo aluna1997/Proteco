@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "650175550968",
+    "firebase_url": "https://memories-8ab9a.firebaseio.com",
+    "project_id": "memories-8ab9a",
+    "storage_bucket": "memories-8ab9a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650175550968:android:2c6f7aa62deb126b",
+        "android_client_info": {
+          "package_name": "com.unam.aluna.memories"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650175550968-1pc8hcip2smrt34n19240afkqrn0stth.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.unam.aluna.memories",
+            "certificate_hash": "2a5a91b9fcc2131fb60c726b30917c88263fbf92"
+          }
+        },
+        {
+          "client_id": "650175550968-8706u60oeajvp1l6jk08vg76art62guj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJFokacA4m77YW8agB56McojxLl4cESHs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "650175550968-8706u60oeajvp1l6jk08vg76art62guj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

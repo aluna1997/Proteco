@@ -18,9 +18,9 @@
 
     <string name="pregunta_2.1">¿Con que se fabrica el oleo?</string>
 
-    <string name="pregunta_3.1">Hecho es mejor que perfecto</string>
+    <string name="pregunta_3.1">¿Cual de las siguientes es una obra de Salvador Dali </string>
 
-    <string name="pregunta_4.1">Pregunta 4</string>
+    <string name="pregunta_4.1">La frase "Ser o no ser, esa es la cuestión" pertenece a:</string>
 
     <!--Respuestas-->
     <string name="respuesta_1.1_a">Pablo Picasso</string>
@@ -31,102 +31,97 @@
     <string name="respuesta_2.1_b">Colorantes y aceite</string>
     <string name="respuesta_2.1_c">Colorantes y agua</string>
 
-    <string name="respuesta_3.1_a">3A</string>
-    <string name="respuesta_3.1_b">3b</string>
-    <string name="respuesta_3.1_c">3c</string>
+    <string name="respuesta_3.1_a">El grito</string>
+    <string name="respuesta_3.1_b">El beso</string>
+    <string name="respuesta_3.1_c">La persistencia de la memoria</string>
 
-    <string name="respuesta_4.1_a">4A</string>
-    <string name="respuesta_4.1_b">4b</string>
-    <string name="respuesta_4.1_c">4c</string>
+    <string name="respuesta_4.1_a">William Shakespeare</string>
+    <string name="respuesta_4.1_b">Miguel de Cervantes</string>
+    <string name="respuesta_4.1_c">Carlos Fuentes</string>
 
     <!--CINE -->
 
     <!--Preguntas-->
-    <string name="pregunta_1.2">Pregunta 1 cine</string>
+    <string name="pregunta_1.2">La frase "Elemental, querido Watson" es del personaje:</string>
 
-    <string name="pregunta_2.2">Pregunta 2 cine</string>
+    <string name="pregunta_2.2">El director de Titanic es:</string>
 
-    <string name="pregunta_3.2">Pregunta 3 cine</string>
+    <string name="pregunta_3.2">¿Cuantas peliculas de " Back To The Future" hay?</string>
 
-    <string name="pregunta_4.2">Pregunta 4 cine</string>
+    <string name="pregunta_4.2">Un personaje interpretado po Sylvester Stallone es:</string>
 
     <!--Respuestas-->
-    <string name="respuesta_1.2_a">Res 1a cine</string>
-    <string name="respuesta_1.2_b">Res 1B cine</string>
-    <string name="respuesta_1.2_c">Res 1C cine</string>
+    <string name="respuesta_1.2_a">Han Solo</string>
+    <string name="respuesta_1.2_b">Sherlock Holmes</string>
+    <string name="respuesta_1.2_c">Marty McFly</string>
 
-    <string name="respuesta_2.2_a">Res 2a cine</string>
-    <string name="respuesta_2.2_b">Res 2B cine</string>
-    <string name="respuesta_2.2_c">Res 2C cine</string>
+    <string name="respuesta_2.2_a">Tim Burton</string>
+    <string name="respuesta_2.2_b">James Cameron</string>
+    <string name="respuesta_2.2_c">Robert Zemeckis</string>
 
-    <string name="respuesta_3.2_a">Res 3a cine</string>
-    <string name="respuesta_3.2_b">Res 3B cine</string>
-    <string name="respuesta_3.2_c">Res 3c cine</string>
+    <string name="respuesta_3.2_a">Cuatro</string>
+    <string name="respuesta_3.2_b">Seis</string>
+    <string name="respuesta_3.2_c">Es una trilogia</string>
 
-    <string name="respuesta_4.2_a">Res 4a cine</string>
-    <string name="respuesta_4.2_b">Res 4b cine</string>
-    <string name="respuesta_4.2_c">Res 4c cine</string>
+    <string name="respuesta_4.2_a">Darth Vader</string>
+    <string name="respuesta_4.2_b">Rocky Balboa</string>
+    <string name="respuesta_4.2_c">Superman</string>
 
     <!--DEPORTES -->
 
     <!--Preguntas-->
-    <string name="pregunta_1.3">Pregunta 1 deportes</string>
+    <string name="pregunta_1.3">¿Cuantos jugadores de voleibol hay en cada cancha en un juego?</string>
 
-    <string name="pregunta_2.3">Pregunta 2 deportes</string>
+    <string name="pregunta_2.3">¿A quien se le atribuye el gol llamado "La mano de Dios" en el futbol?</string>
 
-    <string name="pregunta_3.3">Pregunta 3 deportes</string>
+    <string name="pregunta_3.3">Lorena Ochoa es:</string>
 
-    <string name="pregunta_4.3">Pregunta 4 deportes</string>
+    <string name="pregunta_4.3">¿A quien se le considera el corredor mas rapido actualmente?</string>
 
     <!--Respuestas-->
-    <string name="respuesta_1.3_a">Res 1a deportes</string>
-    <string name="respuesta_1.3_b">Res 1b deportes</string>
-    <string name="respuesta_1.3_c">Res 1c deportes</string>
+    <string name="respuesta_1.3_a">Ocho</string>
+    <string name="respuesta_1.3_b">Seis</string>
+    <string name="respuesta_1.3_c">Cinco</string>
 
-    <string name="respuesta_2.3_a">Res 2a deportes</string>
-    <string name="respuesta_2.3_b">Res 2b deportes</string>
-    <string name="respuesta_2.3_c">Res 2c deportes</string>
+    <string name="respuesta_2.3_a">Diego Armando Maradona</string>
+    <string name="respuesta_2.3_b">Lionel Messi</string>
+    <string name="respuesta_2.3_c">Cristiano Ronaldo</string>
 
-    <string name="respuesta_3.3_a">Res 3a deportes</string>
-    <string name="respuesta_3.3_b">Res 3b deportes</string>
-    <string name="respuesta_3.3_c">Res 3c deportes</string>
+    <string name="respuesta_3.3_a">Futbolista</string>
+    <string name="respuesta_3.3_b">Golfista</string>
+    <string name="respuesta_3.3_c">Corredora</string>
 
-    <string name="respuesta_4.3_a">Res 4a deportes</string>
-    <string name="respuesta_4.3_b">Res 4b deportes</string>
-    <string name="respuesta_4.3_c">Res 4c deportes</string>
+    <string name="respuesta_4.3_a">Gilberto Godoy Filho</string>
+    <string name="respuesta_4.3_b">Michael Phelps</string>
+    <string name="respuesta_4.3_c">Usain Bolt</string>
 
     <!--CIENCIA -->
 
     <!--Preguntas-->
-    <string name="pregunta_1.4">Pregunta 1 ciencia</string>
+    <string name="pregunta_1.4">¿Para que se usa la formula general?</string>
 
-    <string name="pregunta_2.4">Pregunta 2 ciencia</string>
+    <string name="pregunta_2.4">¿A cuantos m/s2 equivale la gravedad?</string>
 
-    <string name="pregunta_3.4">Pregunta 3 ciencia</string>
+    <string name="pregunta_3.4">Las computadoras trabajan con base:</string>
 
-    <string name="pregunta_4.4">Pregunta 4 ciencia</string>
+    <string name="pregunta_4.4">¿Quien fue el primero en decir que la Tierra orbita alrededor del Sol?</string>
 
     <!--Respuestas-->
-    <string name="respuesta_1.4_a">Res 1a ciencia</string>
-    <string name="respuesta_1.4_b">Res 1b ciencia</string>
-    <string name="respuesta_1.4_c">Res 1c ciencia</string>
+    <string name="respuesta_1.4_a">Para hallar las raíces de una ecuación cuadrática</string>
+    <string name="respuesta_1.4_b">Encontrar los valores de tres incognitas</string>
+    <string name="respuesta_1.4_c">Factorizar una ecuacion de segundo grado</string>
 
-    <string name="respuesta_2.4_a">Res 2a ciencia</string>
-    <string name="respuesta_2.4_b">Res 2b ciencia</string>
-    <string name="respuesta_2.4_c">Res 2c ciencia</string>
+    <string name="respuesta_2.4_a">9.81 m/s2</string>
+    <string name="respuesta_2.4_b">3.1416 m/s2</string>
+    <string name="respuesta_2.4_c">2.718 m/s2</string>
 
-    <string name="respuesta_3.4_a">Res 3a ciencia</string>
-    <string name="respuesta_3.4_b">Res 3b ciencia</string>
-    <string name="respuesta_3.4_c">Res 3c ciencia</string>
+    <string name="respuesta_3.4_a">Dos</string>
+    <string name="respuesta_3.4_b">Seis</string>
+    <string name="respuesta_3.4_c">Tres</string>
 
-    <string name="respuesta_4.4_a">Res 4a ciencia</string>
-    <string name="respuesta_4.4_b">Res 4b ciencia</string>
-    <string name="respuesta_4.4_c">Res 4c ciencia</string>
-
-
-
-
-
+    <string name="respuesta_4.4_a">Nicolás Copérnico</string>
+    <string name="respuesta_4.4_b">Galileo Galilei</string>
+    <string name="respuesta_4.4_c">Aristarco de Samos</string>
 
 
 
