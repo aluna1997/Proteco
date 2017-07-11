@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="700dp"
     android:layout_height="match_parent"
+    android:background="@drawable/chichen_itza"
     tools:context="com.unam.aluna.memories.MainActivity">
 
 
@@ -11,21 +12,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:layout_alignParentBottom="true"
-        android:layout_alignEnd="@+id/mensajeTextView"
-        android:layout_marginBottom="231dp" />
+        android:layout_marginStart="108dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
 
-
-    <TextView
-        android:id="@+id/mensajeTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Hello World!"
-        android:textSize="36dp"
-        android:layout_above="@+id/login_button"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="24dp" />
 
 
 </RelativeLayout>

@@ -2,4 +2,5 @@
     <string name="app_name">Memories</string>
     <string name="facebook_app_id">669125423278156</string>
     <string name="fb_login_protocol_scheme">fb669125423278156</string>
+    <string name="send_to">sendo to</string>
 </resources>
